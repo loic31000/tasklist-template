@@ -1,0 +1,83 @@
+body {
+    height: auto;
+    margin: 0;
+    background: #0f2f46;
+    color: rgb(245, 247, 248);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f2f46;
+    padding: 1rem;
+}
+
+header img {
+    height: 20.1rem;
+    width: 49.8rem;
+    margin: -3.1rem;
+
+}
+
+.user_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f2f46;
+    padding: 1rem;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    margin: 2rem;
+}
+
+button {
+    background-color: #0f2f46;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4.3rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgb(14, 15, 15);
+    font-size: medium;
+}
+
+input {
+    border-radius: 4.3rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-container input {
+    text-align: center;
+} 
