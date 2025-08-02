@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($email && $password) {
         $user_id = create_user($email, $password);
         if ($user_id) {
-            $message = "Inscription réussie ! <a href='login.php'>Connectez-vous</a>.";
+            header("Location: index.php");
         } else {
             $message = "Erreur : cet email existe déjà ou problème technique.";
         }
@@ -42,19 +42,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </section>
 
 
-        <section class="user_section">
-            <div class="user_section">
-                <h1>Inscription</h1>
-                <?php if ($message): ?>
-                    <p><?= $message ?></p>
-                <?php endif; ?>
-                <form method="post">
-                    <label>Email : <input type="email" name="email" required></label><br>
-                    <label>Mot de passe : <input type="password" name="password" required></label><br>
-                    <button type="submit">S'inscrire</button>
-                </form>
-            </div>
-        </section>
+    <section class="user_section">
+        <div class="user_section">
+            <h1>Inscription</h1>
+            <?php if ($message): ?>
+                <p><?= $message ?></p>
+            <?php endif; ?>
+            <form method="post">
+                <label>Email : <input type="email" name="email" required></label><br>
+                <label>Mot de passe : <input type="password" name="password" required></label><br>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

@@ -31,7 +31,6 @@ $tasks = get_all_task();
 
     <section class="user-action">
         <a href="add-task.php">Ajouter une tâche</a>
-        <a href="delete-task.php">Supprimé une tâche</a>
         <a href="logout.php">Logout</a>
     </section>
     <h2>Liste des tâches</h2>
@@ -45,6 +44,7 @@ $tasks = get_all_task();
                     <li>
                         <strong><?= htmlspecialchars($task['name']) ?></strong> :
                         <?= htmlspecialchars($task['description']) ?>
+                        <a href="delete-task.php?id=<?= $task['id'] ?>" onclick="return confirm('Supprimer cette tâche ?');">Supprimer</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
