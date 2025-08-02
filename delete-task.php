@@ -1,7 +1,7 @@
 <?php
 require_once "bdd-crud.php";
 
-// TODO Suppréssion d'une tâche en fonction de son ID passé en $_GET
+// Suppréssion d'une tâche en fonction de son ID passé en $_GET
 $message = "";
 
 if (isset($_GET['id'])) {

@@ -10,13 +10,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($email && $password) {
         $user_id = create_user($email, $password);
         if ($user_id) {
-            header("Location: index.php");
         } else {
             $message = "Erreur : cet email existe déjà ou problème technique.";
         }
     } else {
         $message = "Veuillez remplir tous les champs.";
     }
+    header("Location: index.php");
+    exit();
 }
 
 ?>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once "bdd-crud.php";
-// TODO Connection Utilisateur via la 
 
 $message = "";
 
@@ -53,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <label for="password">Mots de passe :</label>
                 <input type="password" name="password" required></label><br>
-                
+
                 <button type="submit">Se connecter</button>
             </div>
         </form>
