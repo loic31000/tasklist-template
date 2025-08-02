@@ -48,8 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <?php endif; ?>
         <form method="post">
             <div class="form-container">
-                <label>Email : <input type="email" name="email" required></label><br>
-                <label>Mot de passe : <input type="password" name="password" required></label><br>
+                <label for="mail">Email :</label>
+                <input type="email" name="email" required></label><br>
+
+                <label for="password">Mots de passe :</label>
+                <input type="password" name="password" required></label><br>
+                
                 <button type="submit">Se connecter</button>
             </div>
         </form>

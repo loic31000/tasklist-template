@@ -16,20 +16,27 @@ $tasks = get_all_task();
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Permanent+Marker&family=Rampart+One&family=Rubik+Dirt&family=Slackey&display=swap');
+    </style>
     <title>Voir les taches</title>
 </head>
 
 <body>
     <header>
         <img src="logo-section.jpg" alt="">
-        <a href="login.php">Login</a>
-        <a href="logout.php">Logout</a>
-        <a href="inscription.php">Se créer un compte</a>
-        <a href="add-task.php">Ajouter une tâche</a>
     </header>
-    <h1>Liste des tâches</h1>
+
+    <section class="user-action">
+        <a href="add-task.php">Ajouter une tâche</a>
+        <a href="delete-task.php">Supprimé une tâche</a>
+        <a href="logout.php">Logout</a>
+    </section>
+    <h2>Liste des tâches</h2>
+
+
     <div class="tasks">
 
         <?php if ($tasks): ?>

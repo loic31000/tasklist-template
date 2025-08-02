@@ -2,7 +2,10 @@ body {
     height: auto;
     margin: 0;
     background: #0f2f46;
-    color: rgb(245, 247, 248);
+    color: #2674f2;
+    font-family: "Chela One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -16,8 +19,6 @@ header {
 
 header img {
     height: 20.1rem;
-    width: 49.8rem;
-    margin: -3.1rem;
 
 }
 
@@ -27,14 +28,47 @@ header img {
     align-items: center;
     flex-direction: column;
     background-color: #0f2f46;
-    padding: 1rem;
+}
 
+.user-action {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: solid 2px;
+    margin: 2rem;
+    background-color: black;
+    width: 22rem;
+    border-radius: 4rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 2px;
+    margin: 2rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: xx-large;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 2px;
+    margin: 2rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 2rem;
 }
 
 a {
@@ -42,22 +76,22 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color: white;
+    color: #06dc81;
     margin: 2rem;
 }
 
 button {
-    background-color: #0f2f46;
-    color: white;
+    background-color: black;
+    color: #2671f2;
     padding: 0.5rem 1rem;
     border-radius: 4.3rem;
     cursor: pointer;
-    box-shadow: 3px 3px 6px rgb(14, 15, 15);
+    box-shadow: 3px 3px 6px #2671f2;
     font-size: medium;
+    border: solid #2671f2;
 }
 
 input {
-    border-radius: 4.3rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -80,4 +114,40 @@ label {
 
 .form-container input {
     text-align: center;
-} 
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+textarea {
+    height: 7rem;
+    font-size: 1.5rem;
+}
+
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
